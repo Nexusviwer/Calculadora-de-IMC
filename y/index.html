@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+           <nav>
+            <h1 class="logo">Calculadora de IMC</h1>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+            </ul>
+           </nav>
+        </header>
+        <main class="main">
+            <div class="cardform">
+                <h2 class="titlecard">Calculadora</h2>
+                <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+                <div class="peso">
+                    <h4 class="textpeso">Digite seu peso:</h4>
+                    <input id="peso" type="text" placeholder="peso">
+                    <h5>KG</h5>
+                </div>
+                <div class="alt">
+                    <h4 class="textalt">Digite sua Altura:</h4>
+                    <input id="alt" type="text" placeholder="ex: 1.70 m">
+                    <h5>m^2</h5>
+                </div>
+                <button id="btnaction" onclick="calc()">Calcular</button>
+                <div class="resultado">
+                    <h4>Resultado</h4>
+                    <div class="rescard">
+                        <p id="res"></p>
+                    </div>
+                </div>
+                <span>
+                  <div id="resc">
+
+                  </div>
+                </span>
+                <a href="sobre.html" id="table">Conferir Resultado na tabela</a>
+            </div>
+            
+            
+        </main>
+    </div>
+</body>
+</html>
